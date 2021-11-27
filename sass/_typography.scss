@@ -1,0 +1,22 @@
+.heading-2 {
+    font-weight: 400;
+    font-size: 4rem;
+    font-style: italic;
+    line-height: 1;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    &--light { color: $color-grey-light-1; }
+    &--dark { color: $color-grey-light-2; }
+}
+.heading-4 {
+    font-size: 1.9rem;
+
+    &--light { color: $color-grey-light-1; }
+    &--dark { color: $color-grey-light-2; }
+}
+
+.heading__main{
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 5rem;
+    color: $color-primary-dark;
+}

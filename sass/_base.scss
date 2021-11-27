@@ -1,0 +1,78 @@
+//Colors
+$color-primary: #2c7695;
+$color-primary-dark:#214d72;
+$color-secondary-light:#1d3752;
+$color-secondary: #101d2c;
+
+$color-grey-light-1: #f9f7f6;
+$color-grey-light-2: #aaa;
+
+
+
+// FONT VARIABLES
+$font-primary: 'Nunito', sans-serif;
+$font-display: 'Josefin Sans', sans-serif;
+
+// RESPONSIVE BREAKPOINTS
+$bp-largest: 75em;   // 1200px
+$bp-large: 62.5em;   // 1000px
+$bp-medium: 50em;    // 800px;
+$bp-small: 37.5em;    // 600px;
+//Utilities
+.u-center-text{text-align: center;}
+.u-margin-bottom-8{margin-bottom: 8rem;}
+.u-margin-bottom-2{margin-bottom: 2rem !important; }
+.u-margin-top-big{margin-top: 8rem !important;}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
+
+    @media only screen and (max-width: $bp-largest) {
+        font-size: 50%;
+    }
+}
+
+body {
+    font-family: $font-primary;
+    color: $color-grey-light-2;
+    font-weight: 300;
+    line-height: 1.6;
+}
+.book-now{
+    background-image:linear-gradient(105deg ,rgba(255, 255, 255,0.9) 0%,
+                                            rgba(255, 255, 255,0.9) 50%,
+                                            transparent 50%),
+                                            url(../img/nat-10.jpg);
+    background-size: cover;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba($color-primary-dark,0.2);
+    height: 50rem;
+    width: 75%;
+    margin: 0 auto;
+
+    &__form {
+        width: 50%;
+        padding: 6rem;
+
+    }
+}
